@@ -1,0 +1,1 @@
+credentials <- read.csv("account_and_login_data/login_file.csv", stringsAsFactors = FALSE)

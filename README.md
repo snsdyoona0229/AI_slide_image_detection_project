@@ -26,3 +26,9 @@
 	通過選擇欄位設定，設定訓練完後結果呈現圖層位置。
 ![image](https://github.com/snsdyoona0229/AI_slide_image_detection_project/blob/main/img/01.png)
 ![image](https://github.com/snsdyoona0229/AI_slide_image_detection_project/blob/main/img/02.png)
+## ResUNet
+ResNet由深度殘差網路(Deep residual network)和UNet所發想的語意分割(Semantic Segmentation)模型如圖。
+它的架構充分展現「殘差」、「UNet」的優點。
+神經網路模型堆疊越深除了常見問題如有梯度消失（vanishing gradient）或梯度爆炸（exploding gradient)，可以採用類似Batch Normalization或Dropout等很多手段解決外可能會遇到的就是神經網路模型退化問題（Degradation problem），神經網路模型堆疊越深，整個神經網路複雜度會增加造成網路不是這麼好訓練，訓練過程也會隨著網路模型越深，抓取特徵過程會丟失越多特徵，錯誤率也上升。
+UNet網路模型如圖加入ResNet網路模型目的是假設直接mapping input x的結果為H(x)，則ResNet希望模型能學習到的是殘差F(x)= H(x)-x，因此，只有F(x)會通過卷積層(Convolution layer)。這使得當殘差為0時，此時卷積層(Convolution layer)就像做了identity mapping。此論文稱這條identity的路徑為short cut，short cut的設計使得Network的性能得以提升，並且不需要增加額外的參數
+

@@ -11,6 +11,7 @@
 ---通過Hamamatsu SDK（.ndpi）判斷
 ---通過Philips SDK（.iSyntax）判斷
 2.	可以上傳多張波片圖像進行AI輔助標註或者選取過去上傳多張波片圖像進行AI輔助標註
+![image](https://github.com/snsdyoona0229/AI_slide_image_detection_project/blob/main/img/04.png)
 3.	有多個標註圖層可以供使用者標註
 	標註點的標註與編輯
 可以根據標註點的大小、顏色、新增、刪除標註點等等
@@ -31,4 +32,4 @@ ResNet由深度殘差網路(Deep residual network)和UNet所發想的語意分�
 它的架構充分展現「殘差」、「UNet」的優點。
 神經網路模型堆疊越深除了常見問題如有梯度消失（vanishing gradient）或梯度爆炸（exploding gradient)，可以採用類似Batch Normalization或Dropout等很多手段解決外可能會遇到的就是神經網路模型退化問題（Degradation problem），神經網路模型堆疊越深，整個神經網路複雜度會增加造成網路不是這麼好訓練，訓練過程也會隨著網路模型越深，抓取特徵過程會丟失越多特徵，錯誤率也上升。
 UNet網路模型如圖加入ResNet網路模型目的是假設直接mapping input x的結果為H(x)，則ResNet希望模型能學習到的是殘差F(x)= H(x)-x，因此，只有F(x)會通過卷積層(Convolution layer)。這使得當殘差為0時，此時卷積層(Convolution layer)就像做了identity mapping。此論文稱這條identity的路徑為short cut，short cut的設計使得Network的性能得以提升，並且不需要增加額外的參數
-
+![image](https://github.com/snsdyoona0229/AI_slide_image_detection_project/blob/main/img/03.png)

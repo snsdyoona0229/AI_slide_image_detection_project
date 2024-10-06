@@ -24,4 +24,5 @@
 	在ResUNet網路模型輔助標註時你可以選擇Overlap-tile，Overlap-tile帶來的好處有許多：不需要對圖像進行縮放從而避免圖像細節損失、能夠為邊界區域提供上下文信息、在數據量較少時充當數據擴充的手段。
 	可設定CPU或GPU在訓練時批量處理資料，增加訓練速度。
 	通過選擇欄位設定，設定訓練完後結果呈現圖層位置。
-
+![image](https://github.com/snsdyoona0229/AI_slide_image_detection_project/blob/main/img/01.png)
+![image](https://github.com/snsdyoona0229/AI_slide_image_detection_project/blob/main/img/02.png)
